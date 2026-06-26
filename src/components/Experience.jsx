@@ -7,7 +7,6 @@ const Experience = () => {
         <h2 className="section-title">Education</h2>
         <div className="experience-timeline">
           
-          {/* Education Item */}
           <div className="experience-item">
             <div className="experience-dot"></div>
             <span className="experience-period">2024 – Present</span>

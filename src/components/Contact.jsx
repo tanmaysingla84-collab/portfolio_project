@@ -1,34 +1,29 @@
 import React, { useState } from 'react'
 
 const Contact = () => {
-  // useState: to track contact form fields
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
 
-  // useState: to track submission status (success alert/message)
   const [submitStatus, setSubmitStatus] = useState('')
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
     
-    // Check if fields are empty
+
     if (!name || !email || !subject || !message) {
       setSubmitStatus('error')
       return
     }
 
-    // Set success status
     setSubmitStatus('success')
 
-    // Reset state inputs
     setName('')
     setEmail('')
     setSubject('')
     setMessage('')
 
-    // Reset status message after 4 seconds
     setTimeout(() => {
       setSubmitStatus('')
     }, 4000)
@@ -87,7 +82,6 @@ const Contact = () => {
               <button type="submit">Send Message</button>
             </form>
 
-            {/* Display validation or success messages using state */}
             {submitStatus === 'success' && (
               <div style={{
                 marginTop: '15px',

@@ -45,9 +45,9 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="projects-links">
-                  <a href="#" className="projects-link">
+                  <button className="projects-link" style={{ background: 'none', border: 'none', font: 'inherit', cursor: 'pointer', padding: 0 }}>
                     <i className="fab fa-github"></i> Code
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

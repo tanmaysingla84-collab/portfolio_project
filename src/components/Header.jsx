@@ -6,7 +6,7 @@ const Header = () => {
       <div className="hero-content">
         <div className="hero-text-container">
           <div className="hero-badge">
-            <span className="pulse-dot"></span> OPEN TO OPPORTUNITIES
+            OPEN TO OPPORTUNITIES
           </div>
           <h1 className="hero-name">Tanmay Singla</h1>
           <h2 className="hero-role">Cybersecurity Engineered</h2>
@@ -14,12 +14,12 @@ const Header = () => {
             I'm a security analyst and full-stack developer. I build resilient digital infrastructure and neutralize vulnerabilities before they are exploited.
           </p>
           <div className="hero-button-group">
-            <a href="#projects" className="hero-btn-primary">
+            <button className="hero-btn-primary">
               Explore Work <i className="fas fa-arrow-right"></i>
-            </a>
-            <a href="#contact" className="hero-btn-secondary">
+            </button>
+            <button className="hero-btn-secondary">
               Contact Me
-            </a>
+            </button>
             <button className="hero-btn-secondary">
               Get Resume
             </button>
